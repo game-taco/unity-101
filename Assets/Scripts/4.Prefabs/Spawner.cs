@@ -34,6 +34,8 @@ namespace GameTaco.CodeSchool.Prefabs
         {
             GameObject meteorPrefab = _meteorPrefabs[Random.Range(0, _meteorPrefabs.Length)];
             Vector3 pos = transform.position + Vector3.right * Random.Range(-_size / 2f, _size / 2f);
+            
+            //Create a new object in the scene
             GameObject meteor = Instantiate(meteorPrefab, pos, Quaternion.identity);
         }
 

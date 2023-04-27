@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GameTaco.CodeSchool.Physics
+namespace GameTaco.CodeSchool.Prefabs
 {
     public class SimpleVelocity : MonoBehaviour
     {

@@ -453,9 +453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 995928125}
   - component: {fileID: 995928124}
-  - component: {fileID: 995928123}
   - component: {fileID: 995928126}
-  - component: {fileID: 995928127}
   m_Layer: 0
   m_Name: UFO
   m_TagString: Untagged
@@ -463,19 +461,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &995928123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995928122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db228d976b49d042addd8508132cd11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 5
 --- !u!212 &995928124
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -550,23 +535,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995928122}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a73bb39e9b949944a6275cfbb135b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _angle: 90
---- !u!114 &995928127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995928122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26ab63bd2bd6d0e419afaf2e182aa657, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _angle: 30
-  _rotSpeed: 60
+  _angle: 180

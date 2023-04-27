@@ -1,12 +1,11 @@
 using UnityEngine;
 
-
 namespace GameTaco.CodeSchool.Physics
 {
     public class SimpleForce : MonoBehaviour
     {
         [SerializeField] private float _force = 400;
-        [SerializeField] private float _rotationSpeed = 45; // degrees/sec
+        
         private Rigidbody2D _rb;
         
         void Start()

@@ -41,8 +41,8 @@ namespace GameTaco.CodeSchool.Prefabs
     
         private void FixedUpdate()
         {
-            _rb.rotation = Mathf.LerpAngle(_rb.rotation, _rotAngle, _turnSpeed * Mathf.Deg2Rad * Time.fixedDeltaTime);
-            _rb.velocity = transform.up * _speed;
+            // _rb.rotation = Mathf.LerpAngle(_rb.rotation, _rotAngle, _turnSpeed * Mathf.Deg2Rad * Time.fixedDeltaTime);
+            // _rb.velocity = transform.up * _speed;
         }
 
         private void OnCollisionEnter2D(Collision2D other)

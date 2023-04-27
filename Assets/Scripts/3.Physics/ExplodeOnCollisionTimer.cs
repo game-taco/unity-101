@@ -22,6 +22,7 @@ namespace GameTaco.CodeSchool.Physics
 
         private void OnCollisionEnter2D(Collision2D other)
         {
+            //Start the timer on Collision
             if (_timer > 0)
                 return;
 
@@ -30,9 +31,11 @@ namespace GameTaco.CodeSchool.Physics
 
         private void Explode()
         {
+            //Get all the colliders in the zone
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, _radius);
             foreach (Collider2D c in colliders)
             {
+                //Apply force if it has a Rigidbody
                 if (c.TryGetComponent(out Rigidbody2D rb))
                 {
                     Vector2 dir = (c.transform.position - transform.position).normalized;
