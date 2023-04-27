@@ -20,7 +20,7 @@ namespace GameTaco.CodeSchool.TappyPlane
         
         public void AddScore(int scoreToAdd)
         {
-            _playerScore = _playerScore + scoreToAdd;
+            _playerScore += scoreToAdd;
             _scoreText.text = _playerScore.ToString();
         }
         

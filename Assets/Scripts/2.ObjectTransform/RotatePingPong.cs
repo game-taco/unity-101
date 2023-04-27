@@ -9,8 +9,8 @@ namespace GameTaco.CodeSchool.ObjectTransform
 
         void Update()
         {
-            // float delta = Mathf.PingPong(Time.time * _rotSpeed, _angle);
-            // transform.rotation = Quaternion.Euler(0, 0, delta - _angle/2f);
+            float delta = Mathf.PingPong(Time.time * _rotSpeed, _angle);
+            transform.rotation = Quaternion.Euler(0, 0, delta - _angle/2f);
         }
     }
 }
